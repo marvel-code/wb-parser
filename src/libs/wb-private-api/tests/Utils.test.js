@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-undef */
-const Utils = require("../src/Utils");
+const Utils = require("../../src/Utils");
 
 describe("Проверка утилит Card", () => {
   test("Проверка генерации URL на логотип бренда Brand.imageURL()", () => {

@@ -30,6 +30,7 @@
     "string-format": "^2.0.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "typescript": "^5.4.3"
   }
 }

@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-undef */
-const Constants = require("../src/Constants");
-const WBPrivateAPI = require("../src/WBPrivateAPI");
+const Constants = require("../../src/Constants");
+const WBPrivateAPI = require("../../src/WBPrivateAPI");
 
 const wbapi = new WBPrivateAPI({
   destination: Constants.DESTINATIONS.MOSCOW,
@@ -84,7 +84,7 @@ describe("Проверка поиска товаров WBPrivateAPI.search()", (
     expect(catalog.products.length).toBeGreaterThan(0);
     expect(
       catalog.products.every((p) => p.brandId === filters[0].value) &&
-      catalog.products.every((p) => p.supplierId === filters[1].value)
+        catalog.products.every((p) => p.supplierId === filters[1].value)
     ).toBeTruthy();
   });
 
